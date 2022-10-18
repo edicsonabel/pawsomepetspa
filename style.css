@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.letter-gradient,
+.letter-gradient-animated {
+  line-height: normal;
+}
+
+.letter-gradient::before,
+.letter-gradient-animated::before {
+  background: linear-gradient(90deg, var(--start-color), var(--end-color));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  content: var(--content);
+  opacity: 1;
+}
+
+.letter-gradient-animated::before {
+  animation-name: var(--animation, show-and-hide);
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes show-and-hide {
+
+  0%,
+  16.667%,
+  100% {
+    opacity: 1;
+  }
+
+  33.333%,
+  83.333% {
+    opacity: 0;
+  }
+}
