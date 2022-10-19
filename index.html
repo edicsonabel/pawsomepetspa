@@ -10,14 +10,36 @@
 </head>
 
 <body class='bg-black text-white overflow-x-hidden relative min-h-screen max-w-full'>
-  <nav class='text-white fixed bottom-5 w-full z-50'>
+  <nav class='text-white fixed bottom-5 w-full z-50 text-sm'>
     <ul class='bg-[#ea1889] font-bold mx-5 rounded-2xl flex flex-row tracking-wider text-center overflow-hidden'>
-      <li class='basis-1/3'><a class='w-full py-3 inline-block' href='#home'>Home</a></li>
-      <li class='basis-1/3'><a class='w-full py-3 inline-block' href='#services'>Services</a></li>
-      <li class='basis-1/3'><a class='w-full py-3 inline-block' href='#about-us'>About us</a></li>
+      <li class='basis-1/4'><a class='w-full py-3 inline-block' href='#home'>Home</a></li>
+      <li class='basis-1/4'><a class='w-full py-3 inline-block' href='#about-us'>About us</a></li>
+      <li class='basis-1/4'><a class='w-full py-3 inline-block' href='#clients'>Dogs</a></li>
+      <li class='basis-1/4'><a class='w-full py-3 inline-block' href='#services'>Services</a></li>
     </ul>
   </nav>
   <section id='home' class='overflow-x-hidden h-[85vh] flex flex-col relative justify-center'>
+    <div class="absolute inset-0 -z-10">
+      <div id="icons" class="relative [&>img]:p-4 [&>img]:w-24 [&>img]:h-24 [&>img]:opacity-0 [&>img]:absolute h-full">
+        <img class="animate-moving-background" src="/images/paw.png" alt="" style="--delay:0s;">
+        <img class="animate-moving-background" src="/images/paw.png" alt="" style="--delay:.58s;">
+        <img class="animate-moving-background" src="/images/paw.png" alt="" style="--delay:1.16s;">
+        <img class="animate-moving-background" style="--delay: 2.32s" src="/images/paw.png" alt=""
+          style="bottom:384px; left:96px;">
+        <img class="animate-moving-background" src="/images/paw.png" alt="" style="--delay:2.9s;">
+        <img class="animate-moving-background" src="/images/paw.png" alt="" style="--delay:3.48s;">
+        <img class="animate-moving-background" src="/images/paw.png" alt="" style="--delay:4.06s;">
+
+        <img class="animate-moving-background" src="/images/paw.png" alt="" style="--delay:0s;">
+        <img class="animate-moving-background" src="/images/paw.png" alt="" style="--delay:.58s;">
+        <img class="animate-moving-background" src="/images/paw.png" alt="" style="--delay:1.16s;">
+        <img class="animate-moving-background" style="--delay: 2.32s" src="/images/paw.png" alt=""
+          style="bottom:384px; left:96px;">
+        <img class="animate-moving-background" src="/images/paw.png" alt="" style="--delay:2.9s;">
+        <img class="animate-moving-background" src="/images/paw.png" alt="" style="--delay:3.48s;">
+        <img class="animate-moving-background" src="/images/paw.png" alt="" style="--delay:4.06s;">
+      </div>
+    </div>
     <h1 class='hidden'>PAWESOME PET SPA ON WHEELS</h1>
     <picture class='max-w-xl mx-auto'>
       <img class='object-contain px-5' src='/images/pawesome-tagline.webp' alt='pawesome image'>
@@ -26,10 +48,10 @@
       <img class='sm:max-w-xl max-w-sm object-fit px-5 absolute bottom-0' src='/images/dog-nose.png' alt='dog nose'>
     </picture>
   </section>
-  <section id='clients' class='overflow-x-hidden min-h-screen'>
+  <section id='clients' class='overflow-x-hidden'>
     <h2 class='letter-gradient relative block text-center text-6xl font-bold py-10'
       style='--start-color:#007CF0; --end-color:#00DFD8; --content: "Our dogs";'>Our dogs</h2>
-    <div class='container mx-auto px-3 max-w-2xl'>
+    <div class='mx-auto px-3 max-w-4xl'>
       <!-- <img src='/images/dogs-1.webp' alt='beautiful dogs one'> -->
       <section class='text-center pb-5 flex flex-col md:flex-row'>
         <picture class='inline-block mb-5'>
@@ -63,7 +85,7 @@
       </section>
     </div>
   </section>
-  <section id='services' class='overflow-x-hidden min-h-screen'>
+  <section id='services' class='overflow-x-hidden mb-36 px-5'>
     <h2 class='letter-gradient relative block text-center text-6xl font-bold py-10'
       style='--start-color:#7928CA; --end-color:#FF0080; --content: "Services";'>Services</h2>
     <h3 class='text-center text-3xl font-bold py-5'>What is included in a grooming session?</h3>

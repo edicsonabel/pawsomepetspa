@@ -36,3 +36,28 @@
     opacity: 0;
   }
 }
+
+.animate-moving-background {
+  animation-name: var(--animation, moving-background);
+  animation-delay: var(--delay);
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes moving-background {
+
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+
+  66% {
+    opacity: .4;
+  }
+
+  100% {
+    transform: translateY(-150px);
+    opacity: 0;
+  }
+
+}
