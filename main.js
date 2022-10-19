@@ -1,4 +1,7 @@
 import './style.css'
+import './assets/icons/style.css'
+
+/* UTILS */
 import { $$, random } from './utils'
 
 const algo = $$('#icons>.animate-moving-background')
