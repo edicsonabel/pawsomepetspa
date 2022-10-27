@@ -1,0 +1,23 @@
+stages:
+  - 🚀 Website Deploy
+
+cache:
+  paths:
+    - node_modules/
+    - dist/
+
+pages:
+  stage: 🚀 Website Deploy
+  image: node:lts
+  before_script:
+    - npm i -g pnpm
+  script:
+    - pnpm install
+    - ./node_modules/.bin/vite build 
+    - rm -rf ./public
+    - mv dist public
+  artifacts:
+    paths:
+      - public
+  only:
+    - main
