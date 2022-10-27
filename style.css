@@ -156,3 +156,16 @@ body {
   }
 
 }
+
+.accordion>p,
+.accordion>ul {
+  display: none;
+}
+
+.accordion-active>p {
+  display: inherit;
+}
+
+.accordion-active>ul {
+  display: grid;
+}

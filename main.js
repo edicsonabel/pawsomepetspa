@@ -25,3 +25,19 @@ itemsMenu.forEach($link => {
     })
   })
 })
+
+/* Accordions */
+const accordions = $$('.accordion')
+accordions.forEach(accordion => {
+  accordion.classList.toggle('accordion-active')
+  accordion.addEventListener('click', () => {
+    accordion.classList.toggle('accordion-active')
+    let yOffset = -60
+    yOffset = window.innerWidth >= 768 ? yOffset : -10
+    const y = accordion.getBoundingClientRect().top + window.pageYOffset + yOffset
+    window.scrollTo({
+      top: y,
+      behavior: 'smooth'
+    })
+  })
+})
